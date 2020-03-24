@@ -17,7 +17,7 @@ public class GanjilGenap1 {
 					ulangB = false;
 				} else {
 					System.out.println("Masukan tidak valid (bukan bilangan bulat).\n");
-					scan.next();
+					scan.nextLine();
 				}
 			}
 			
@@ -31,14 +31,16 @@ public class GanjilGenap1 {
 			while(ulangB) {
 				System.out.print("Apakan anda ingin memasukkan bilangan lainnya(y/t)?");
 				yT = scan.next().charAt(0);
+				scan.nextLine();
 				
+				yT = Character.toLowerCase(yT);
 				if(yT == 'y') {
 					ulangB = false;
 					System.out.println("");
 				} else if(yT == 't') {
 					ulangB = false;
 					ulangA = false;
-				} else if(yT != 'y') {
+				} else {
 					System.out.println("\nMohon maaf, pilihan jawaban tidak valid.");
 				} 
 			}
