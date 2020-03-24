@@ -16,7 +16,7 @@ public class GanjilGenap1 {
 					bilangan = scan.nextInt();
 					ulangB = false;
 				} else {
-					System.out.println("Masukan tidak valid (bukan sebuah bilangan).\n");
+					System.out.println("Masukan tidak valid (bukan bilangan bulat).\n");
 					scan.next();
 				}
 			}
