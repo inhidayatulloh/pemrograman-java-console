@@ -54,7 +54,7 @@ public class ManipulasiString1 {
 			
 			ulangB = true;
 			while(ulangB) {
-				System.out.print("Apakan anda ingin memasukkan bilangan lainnya(y/t)?");
+				System.out.print("Apakan anda ingin memasukkan teks lainnya(y/t)?");
 				yT = scan.next().charAt(0);
 				scan.nextLine();
 				
