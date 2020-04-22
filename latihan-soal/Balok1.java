@@ -9,19 +9,64 @@ public class Balok1 {
 	
 	private Scanner scan = new Scanner(System.in);
 	private float panjang, lebar, tinggi;
+	private boolean ulang;
 	
 	public Balok1() {
-		System.out.print("Masukkan Panjang: ");
-		panjang = scan.nextFloat();
-		scan.nextLine();
+		ulang = true;
+		while(ulang) {
+			System.out.print("Masukkan Panjang: ");
+			if(scan.hasNextFloat()) {
+				panjang = scan.nextFloat();
+				if(panjang > 0) {
+					ulang = false;
+					System.out.println("");
+				} else {
+					System.out.println("Panjang harus lebih dari nol (0).");
+				}
+				scan.nextLine();
+			} else {
+				System.out.println("Masukan tidak valid (bukan bilangan).");
+				scan.nextLine();
+			}
+			
+		}
 		
-		System.out.print("Masukkan Lebar: ");
-		lebar = scan.nextFloat();
-		scan.nextLine();
+		ulang = true;
+		while(ulang) {
+			System.out.print("Masukkan Lebar\t: ");
+			if(scan.hasNextFloat()) {
+				lebar = scan.nextFloat();
+				if(lebar > 0) {
+					ulang = false;
+					System.out.println("");
+				} else {
+					System.out.println("Lebar harus lebih dari nol (0).");
+				}
+				scan.nextLine();
+			} else {
+				System.out.println("Masukan tidak valid (bukan bilangan).");
+				scan.nextLine();
+			}
+			
+		}
 		
-		System.out.print("Masukkan Tinggi: ");
-		tinggi = scan.nextFloat();
-		scan.nextLine();
+		ulang = true;
+		while(ulang) {
+			System.out.print("Masukkan Tinggi\t: ");
+			if(scan.hasNextFloat()) {
+				tinggi = scan.nextFloat();
+				if(tinggi > 0) {
+					ulang = false;
+				} else {
+					System.out.println("Tinggi harus lebih dari nol (0).");
+				}
+				scan.nextLine();
+			} else {
+				System.out.println("Masukan tidak valid (bukan bilangan).");
+				scan.nextLine();
+			}
+			
+		}
 	}
 	
 	private float hitungKeliling() {
@@ -47,7 +92,7 @@ public class Balok1 {
 		System.out.println("\n3. Form Input Balok Besar");
 		Balok1 balokBesar = new Balok1();
 		
-		System.out.println("\n======= Hasil Perhitungan =======");
+		System.out.println("\n========== Hasil Perhitungan ==========");
 		System.out.println("1. Balok Kecil" + 
 						   "\nPanjang\t\t: " + balokKecil.panjang + 
 						   "\nLebar\t\t: " + balokKecil.lebar + 
