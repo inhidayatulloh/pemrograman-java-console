@@ -1,6 +1,6 @@
-/* Programmer						: Indra Hidayatulloh
-   Tanggal dibuat					: 23 April 2020
-   Github/Youtube/Twitter/FB/IG		: inhidayatulloh
+/* Programmer			: Indra Hidayatulloh
+   Tanggal dibuat		: 23 April 2020
+   Github/Youtube/Twitter/FB/IG	: inhidayatulloh
 */
 
 import java.util.Scanner;
