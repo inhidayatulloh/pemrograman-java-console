@@ -1,3 +1,8 @@
+/* Programmer			: Indra Hidayatulloh
+   Tanggal dibuat		: 25 Maret 2020
+   Github/Youtube/Twitter/FB/IG	: inhidayatulloh
+*/
+
 import java.util.Scanner;
 
 public class GanjilGenap1 {
