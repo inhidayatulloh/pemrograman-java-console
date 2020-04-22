@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class KonverterSuhu {
+public class KonverterSuhu1 {
 	
 	static float konversiSuhu(String paramArahKonversi, float paramDerajatSuhuAsal) {
 		float derajatHasilKonversi = 0f;
