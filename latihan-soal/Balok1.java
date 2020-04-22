@@ -23,12 +23,10 @@ public class Balok1 {
 				} else {
 					System.out.println("Panjang harus lebih dari nol (0).");
 				}
-				scan.nextLine();
 			} else {
 				System.out.println("Masukan tidak valid (bukan bilangan).");
-				scan.nextLine();
 			}
-			
+			scan.nextLine();
 		}
 		
 		ulang = true;
@@ -42,12 +40,10 @@ public class Balok1 {
 				} else {
 					System.out.println("Lebar harus lebih dari nol (0).");
 				}
-				scan.nextLine();
 			} else {
 				System.out.println("Masukan tidak valid (bukan bilangan).");
-				scan.nextLine();
 			}
-			
+			scan.nextLine();
 		}
 		
 		ulang = true;
@@ -60,12 +56,10 @@ public class Balok1 {
 				} else {
 					System.out.println("Tinggi harus lebih dari nol (0).");
 				}
-				scan.nextLine();
 			} else {
 				System.out.println("Masukan tidak valid (bukan bilangan).");
-				scan.nextLine();
 			}
-			
+			scan.nextLine();
 		}
 	}
 	
